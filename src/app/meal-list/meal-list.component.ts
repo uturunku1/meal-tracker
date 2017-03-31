@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from './../meal.model';
 
 @Component({
@@ -10,8 +10,6 @@ export class MealListComponent implements OnInit {
   @Input() childMealList: Meal[];
 
   constructor() { }
-
   ngOnInit() {
   }
-
 }
