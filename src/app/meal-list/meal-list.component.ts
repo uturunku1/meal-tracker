@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Meal } from './../meal.model';
 
 @Component({
   selector: 'app-meal-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meal-list.component.css']
 })
 export class MealListComponent implements OnInit {
+  @Input() childMealList: Meal[];
 
   constructor() { }
 

@@ -1,12 +1,12 @@
 # MealTracker
-## By Stella Huayhuaca
+### By Stella Huayhuaca
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
-# Project Description
+## Project Description
 A meal tracker for the user to log in a description and calorie intake of each of his meals.
 
-#Installation
+## Installation
 
 * git clone repository
 * cd meal-tracker project
@@ -15,7 +15,7 @@ A meal tracker for the user to log in a description and calorie intake of each o
 * ng server
 * go to browser: localhost:4200
 
-# Specs/User stories planning
+## Specs/User stories planning
 - As a user, I want to be able to add new meals to my list.
 - As a user, I want to be able to view a list of all my meals.
 - As a user, I want to be able to edit an individual meal to change, for example, the number of calories.
