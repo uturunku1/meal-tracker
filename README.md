@@ -1,6 +1,26 @@
 # MealTracker
+## By Stella Huayhuaca
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+
+# Project Description
+A meal tracker for the user to log in a description and calorie intake of each of his meals.
+
+#Installation
+
+* git clone repository
+* cd meal-tracker project
+* npm Installation
+* bower Installation
+* ng server
+* go to browser: localhost:4200
+
+# Specs/User stories planning
+- As a user, I want to be able to add new meals to my list.
+- As a user, I want to be able to view a list of all my meals.
+- As a user, I want to be able to edit an individual meal to change, for example, the number of calories.
+- As a user, I want to be able to check/filter only the meals with a high calorie content.
+- As a user, I want to be able to remove certain meals from the list (not part of the MVP.)
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
