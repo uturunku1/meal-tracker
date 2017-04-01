@@ -4,12 +4,12 @@
     <label>Enter name of food:</label>
     <input #newName class="form-control">
     <label>Enter number of calories:</label>
-    <input #newCalorie class="form-control">
+    <input type="number" #newCalorie class="form-control">
     <label>Enter details about this meal:</label>
     <input #newDetails class="form-control">
     <label>Enter url to an image:</label>
     <input #newImage class="form-control">
     <br>
-    <button class="btn btn-success" (click)="submitForm(newName.value, newCalorie.value, newDetails.value, newImage.value);">Add meal</button>
+    <button class="btn btn-success" (click)="submitForm(newName.value, newCalorie.value, newDetails.value, newImage.value); newName.value=''; newCalorie.value=''; newDetails.value=''; newImage.value=''; ">Add meal</button>
   </form>
 </div>

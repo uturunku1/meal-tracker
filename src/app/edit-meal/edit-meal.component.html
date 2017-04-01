@@ -1,3 +1,12 @@
-<p>
-  edit-meal works!
-</p>
+<div *ngIf="childSelectedMeal">
+  <h3>Edit {{childSelectedMeal.name}}:</h3>
+  <label>Change name to:</label>
+  <input type="text" [(ngModel)]="childSelectedMeal.name">
+  <label>Change calories to:</label>
+  <input type="number" [(ngModel)]="childSelectedMeal.calorie">
+  <label>Change details to:</label>
+  <input type="text" [(ngModel)]="childSelectedMeal.details">
+  <label>Change image to:</label>
+  <input type="text" [(ngModel)]="childSelectedMeal.image">
+  <button class="btn btn-default"></button>
+</div>

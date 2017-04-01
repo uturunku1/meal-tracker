@@ -8,6 +8,10 @@ import { Meal } from './../meal.model';
 })
 export class MealListComponent implements OnInit {
   @Input() childMealList: Meal[];
+  @Output() clickSender = new EventEmitter();
+  editMeal(meal: Meal){
+    this.clickSender.emit(meal);
+  }
 
   constructor() { }
   ngOnInit() {

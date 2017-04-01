@@ -7,9 +7,9 @@ import { Meal } from './../meal.model';
   styleUrls: ['./edit-meal.component.css']
 })
 export class EditMealComponent implements OnInit {
+  @Input() childSelectedMeal: Meal;
 
   constructor() { }
-
   ngOnInit() {
   }
 
