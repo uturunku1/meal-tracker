@@ -10,6 +10,7 @@ export class MealListComponent implements OnInit {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
   editMeal(meal: Meal){
+    console.log("yes");
     this.clickSender.emit(meal);
   }
 
