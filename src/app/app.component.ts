@@ -19,9 +19,11 @@ export class AppComponent {
     this.masterMealList.push(newMeal);
   }
 
-  // selectedMeal: Meal = null;
-
   editMeal(clickedMeal){
     this.selectedMeal = clickedMeal;
+  }
+
+  finishedChanges(){
+    this.selectedMeal= null;
   }
 }

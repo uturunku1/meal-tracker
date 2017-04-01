@@ -1,5 +1,10 @@
+<select (change)="onChange($event.target.value)">
+  <option value="allMeals" selected="selected">All meals</option>
+  <option value="high">High Calorie meals</option>
+</select>
+<hr>
 <div class="row">
-  <div class="col-sm-4" *ngFor= 'let meal of childMealList'>
+  <div class="col-sm-4" *ngFor= 'let meal of childMealList| checkCalorie:filterbycalorie'>
     <p>Meal: {{meal.name}}</p>
     <p>Calories: {{meal.calorie}}</p>
     <p>Details: {{meal.details}}</p>

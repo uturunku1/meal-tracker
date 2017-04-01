@@ -8,6 +8,10 @@ import { Meal } from './../meal.model';
 })
 export class EditMealComponent implements OnInit {
   @Input() childSelectedMeal: Meal;
+  @Output() saveChangesSender = new EventEmitter;
+  saveChanges(){
+    this.saveChangesSender.emit();
+  }
 
   constructor() { }
   ngOnInit() {

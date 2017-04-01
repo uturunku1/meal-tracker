@@ -9,9 +9,12 @@ import { Meal } from './../meal.model';
 export class MealListComponent implements OnInit {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
+  filterbycalorie: string= "allMeals";
   editMeal(meal: Meal){
-    console.log("yes");
     this.clickSender.emit(meal);
+  }
+  onChange(allorhigh){
+    this.filterbycalorie = allorhigh;
   }
 
   constructor() { }
